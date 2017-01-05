@@ -1,0 +1,343 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.hide{
+	display: none;
+}
+.box{
+	width: 100%;
+	height: 100%;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+	background: blue;
+}
+.page1{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/pic1.jpg);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+.page2{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.page1 .arrows{
+	width: 1.25rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -0.625rem;
+	bottom: 3rem;
+}
+.page1 .arrows.Animation{
+	-webkit-animation: upAndDown 2s ease infinite both;
+}
+@-webkit-keyframes upAndDown{
+	0%{
+		width: 1.25rem;
+		bottom:3rem;
+	}
+	50%{
+		width: 1.2rem;
+		bottom: 4rem;
+	}
+	100%{
+		width: 1.25rem;
+		bottom: 3rem;
+	}
+}
+.page1 .txt{
+	width: 100%;
+	text-align: center;
+	font-size: 0.75rem;
+	color: #fff;
+	/*background: pink;*/
+	position: absolute;
+	bottom: 7rem;
+}
+.page1 .txt .merchant{
+	border-bottom: 1px solid #fff;
+	padding: 0.3125rem 1em;
+	line-height: 1.4375rem;
+}
+.page1 .txt .galname{
+	line-height: 1rem;
+	width: 12.1875rem;
+	margin: 0.1875rem auto;
+}
+.page2 .pic{
+	width: 100%;
+	height: auto;
+	position: absolute;
+}
+.page2 .pic img{
+	width: 100%;
+}
+.rightBtn{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: -3rem;
+	font-size: 0.75rem;
+	display: none;
+}
+.rightBtn .switch{
+	width: 1.0625rem;
+	/*display: none;*/
+}
+.rightBtn nav a{
+	display: block;
+	width: 5.25rem;
+	line-height: 2.25rem;
+	position: absolute;
+	color: #333;
+	right:-5.5rem;
+}
+.rightBtn nav a.a1{
+	top:0;
+	background:url(../images/btn_bg_03.jpg) 100% 100%;
+}
+.rightBtn nav a.a2{
+	top: 2.25rem;
+	background:url(../images/btn_bg_04.jpg) 100% 100%;
+}
+.rightBtn nav a.a3{
+	top: 4.5rem;
+	background:url(../images/btn_bg_05.jpg) 100% 100%;
+}
+.rightBtn nav .a1.Animation{
+	-webkit-animation: leftIn 0.8s ease 1 both;
+}
+.rightBtn nav .a2.Animation{
+	-webkit-animation: leftIn 0.8s 0.3s ease 1 both;
+}
+.rightBtn nav .a3.Animation{
+	-webkit-animation: leftIn 0.8s 0.6s ease 1 both;
+}
+.rightBtn nav .a1.Animation2{
+	-webkit-animation: leftOut 0.8s ease 1 both;
+}
+.rightBtn nav .a2.Animation2{
+	-webkit-animation: leftOut 0.8s 0.3s ease 1 both;
+}
+.rightBtn nav .a3.Animation2{
+	-webkit-animation: leftOut 0.8s 0.6s ease 1 both;
+}
+@-webkit-keyframes leftIn{
+	from{
+		right:-5.5rem;
+	}
+	to{
+		right:0;
+	}
+}
+@-webkit-keyframes leftOut{
+	from{
+		right:0;
+	}
+	to{
+		right:-5.5rem;
+	}
+}
+.rightBtn nav a img{
+	vertical-align: middle;
+}
+.rightBtn nav a .icon_btn{
+	width: 0.75rem;
+	margin-left: 0.4375rem;
+	margin-right: -0.2rem;
+	
+}
+.rightBtn nav a .arrows_btn{
+	position: absolute;
+	width: 0.3125rem;
+	right: 0.3125rem;
+	top: 50%;
+	margin-top: -0.25rem;
+}
+.rightBtn .btns .close_btn{
+	width: 1.25rem;
+	display: none;
+	position:absolute;
+} 
+.rightBtn .btns{
+	/*display: none;*/
+}
+.translucence{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+	display: none;
+}
+.blessing{
+	position: fixed;
+	bottom: 3rem;
+	width: 4.21875rem;
+	height: 1.625rem;
+	right: 1.125rem;
+	display: none;
+}
+.blessing2{
+	position: fixed;
+	bottom: 3rem;
+	width: 1.625rem;
+	height: 1.625rem;
+	right: 1.125rem;
+	display: none;
+}
+.blessing.Animation{
+	-webkit-animation: short 0.8s ease 1 both;
+}
+
+@-webkit-keyframes short{
+	0%{
+		width: 4.21875rem;
+		opacity: 1;
+	}
+	80%{
+		opacity: 1;
+	}
+	100%{
+		width: 1.625rem;
+		opacity: 0;
+	}
+}
+/*点赞*/
+.praises{
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	display: none;
+}
+.praise{
+	/*height: 3rem;*/
+	font-size: 0.75rem;
+	color: #fff;
+	/*background: pink;*/
+	display: none;
+}
+.praise img{
+	width: 0.75rem;
+	margin-right: 0.2rem;
+}
+/* 底部导航*/
+ 
+.advisory{
+	width: 100%;
+	height: 2.5rem;
+	background: #000;
+	position: fixed;
+	bottom: 0;
+	line-height: 2.5rem;
+	text-align: center;
+	color: #fff;
+	z-index: 999;
+}
+.advisory .left{
+	width: 50%;
+	height: 100%;
+	border-right: 1px solid #666;
+	box-sizing: border-box;
+	background-image: url(../images/icon_03.png);
+	background-repeat: no-repeat;
+	background-size: 1rem 1rem;
+	background-position: 0.75rem 0.75rem;
+}
+.advisory .right{
+	width: 50%;
+	height: 100%;
+	background-image: url(../images/icon_05.png);
+	background-repeat: no-repeat;
+	background-size: 1rem 1rem;
+	background-position: 0.75rem 0.75rem;
+}
+ /* 底部导航结束*/
+/*load效果*/
+.loadBox{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: table;
+}
+.loadIn{
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+.bubbles{
+  width:100%;
+  height: 4.84375rem;
+  text-align: center;
+}
+.bubbles span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.4375rem;
+  height: 1.4375rem;
+  margin: 2.703125rem auto 0;
+  background-color:#f3c6ce;
+  border-radius: 50%;
+  @include border-radius(50%);
+  animation: bubbly .9s infinite alternate;
+  -webkit-animation: bubbly .9s infinite alternate;
+}
+/* Bubbles */
+#bubble2 { animation-delay: .27s; -webkit-animation-delay: .27s;background-color: #f3c5bd;}
+#bubble3 { animation-delay: .54s;-webkit-animation-delay: .54s; background-color: #f2d5b5;}
+@-webkit-keyframes bubbly {
+  0% {
+    width: 1.4375rem;
+    height: 1.4375rem;
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    opacity: 0.1;
+    transform: translateY(-32px);
+    -webkit-transform: translateY(-32px);
+  }
+}
+
+@-moz-keyframes bubbly {
+  0% {
+    width: 1.4375rem;
+    height: 1.4375rem;
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    opacity: 0.1;
+    transform: translateY(-32px);
+    -webkit-transform: translateY(-32px);
+  }
+}
+.loading{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #666;
+  font-size: 22px;
+  margin-top: 0.75rem;
+}
+#loading {
+    width: 100%;
+    height: 100%;
+}
+/*load效果结束*/
